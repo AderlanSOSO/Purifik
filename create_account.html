@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua Conta - CASAN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(to right, #97d6ff, #1b6c9b);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .create-account-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .create-account-container h1 {
+            margin-bottom: 20px;
+        }
+        .create-account-container label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .create-account-container input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .create-account-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+        }
+        .create-account-container button:hover {
+            background-color: #0056b3;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="create-account-container">
+        <h1>Crie sua Conta</h1>
+        <form>
+            <label for="username">Nome de Usuário</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button onclick="window.location.href='index.html'">Criar Conta</button>
+        </form>
+    </div>
+</body>
+</html>
